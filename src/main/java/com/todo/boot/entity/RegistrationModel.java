@@ -68,5 +68,10 @@ public class RegistrationModel {
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
+	@Override
+	public String toString() {
+		return "RegistrationModel [id=" + id + ", name=" + name + ", number=" + number + ", email=" + email
+				+ ", gender=" + gender + ", status=" + status + ", departmentId=" + departmentId + "]";
+	}
 	
   }

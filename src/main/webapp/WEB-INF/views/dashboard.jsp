@@ -42,7 +42,7 @@ width: 200px;
   <ul class="list-group">
     <li class="list-group-item"><a href="registor">Employee Registration </a></li>
     <li class="list-group-item"><a href="employeelist">Employee List </a></li>
-    <li class="list-group-item">Logout</li>
+    <li class="list-group-item"><a href="logout">Logout<a></a></li>
   </ul>
 </div>
 	<%@include file='footer.html'%>	
