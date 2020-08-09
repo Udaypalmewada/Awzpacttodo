@@ -21,7 +21,7 @@ body {
 <%@include file='header.html'%>
 <body>
 <%@include file='Decore.html'%>
-<li><a href="userlogin"> <i class="fa fa-home"></i> Login...Here
+<a href="userlogin"> <i class="fa fa-home"> Login...Here</i></a>
 <%@include file='footer.html'%>
 </body>
 </html>

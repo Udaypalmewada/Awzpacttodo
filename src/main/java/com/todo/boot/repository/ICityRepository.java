@@ -10,6 +10,8 @@ import com.todo.boot.entity.City;
 public interface ICityRepository extends JpaRepository<City, Integer>{
 
 	public abstract List<City> findAll();
+	public abstract City findById(int id);
+	public abstract City findById(City city);
 	
-	public abstract City findCityById(Integer id) ;
+	
 }

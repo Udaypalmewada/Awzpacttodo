@@ -64,6 +64,11 @@ public class RegisterRequest {
 	public void setAddress(AddressRequest address) {
 		this.address = address;
 	}
+	@Override
+	public String toString() {
+		return "RegisterRequest [name=" + name + ", number=" + number + ", email=" + email + ", gender=" + gender
+				+ ", status=" + status + ", department=" + department + ", city=" + city + ", address=" + address + "]";
+	}
 	
 	
 

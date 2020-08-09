@@ -1,8 +1,12 @@
 package com.todo.boot.service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Repository;
 
 import com.todo.boot.entity.Address;
@@ -11,6 +15,8 @@ import com.todo.boot.entity.RegistrationModel;
 import com.todo.boot.repository.IAddressRepository;
 import com.todo.boot.repository.ICityRepository;
 import com.todo.boot.repository.IRegistrationRepository;
+import com.todo.boot.request.AddressRequest;
+import com.todo.boot.request.CityRequest;
 import com.todo.boot.request.RegisterRequest;
 
 /** UserDataServiceImpl
@@ -21,9 +27,13 @@ import com.todo.boot.request.RegisterRequest;
 public class UserDataServiceImpl implements IUserDataService {
 	@Autowired
 	private IRegistrationRepository Regirepositry;
-
+	 
+	@Autowired
+	private IAddressRepository  addressRepository;
+	
 	@Autowired
 	private ICityRepository cityRepository;
+	
 	@Autowired
 	private IAddressRepository addressReposity;
 
@@ -36,7 +46,7 @@ public class UserDataServiceImpl implements IUserDataService {
 		registerModel.setStatus(register.isStatus());
 		RegistrationModel model = Regirepositry.save(registerModel);
 		if (null != model) {
-			City city = cityRepository.findCityById(register.getCity().getId());
+			City city = cityRepository.findById(register.getCity().getId());
 
 			Address addr = new Address();
 			addr.setCity(city);
@@ -63,11 +73,47 @@ public class UserDataServiceImpl implements IUserDataService {
 		return null;
 
 	}
-
+	Page<RegistrationModel> findAll(Pageable pageRequest){
+		
+		return null;
+		
+	}
+	
+	
 	@Override
 	public boolean checkUserExistance(RegistrationModel register) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	@Override
+	public List<RegisterRequest> listOfAllEmployee() {
+		List<RegisterRequest>emplist=new ArrayList<>();
+		List<RegistrationModel>list=Regirepositry.findAll();
+		for(RegistrationModel r:list) {
+			Address addrs=addressRepository.findByEmployee(r);
+			RegisterRequest employee= new RegisterRequest();
+			employee.setName(r.getName());
+			employee.setNumber(r.getNumber());
+			employee.setEmail(r.getEmail());
+			employee.setGender(r.getGender());
+			employee.setStatus(r.isStatus());
+			City city=cityRepository.findById(addrs.getCity().getId());
+			CityRequest crq=new CityRequest();
+			crq.setId(city.getId());
+			crq.setName(city.getCityName());
+			AddressRequest adr=new AddressRequest();
+			adr.setAddress(addrs.getAddress());
+			employee.setAddress(adr);
+			employee.setCity(crq);
+			emplist.add(employee);
+			
+		}
+		if (emplist.size()<0) {
+			return null;
+		}
+		
+		return emplist;
 	}
 
 }

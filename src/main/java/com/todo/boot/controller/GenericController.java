@@ -33,6 +33,7 @@ public class GenericController {
 	@Autowired
     private IUserDataService userDataService;
 	
+	
 	/**homepage.
 	 * @return home page.
 	 * for redirection to home page.
@@ -72,7 +73,6 @@ public class GenericController {
     model.addAttribute("register", new RegisterRequest());
     List<CityRequest> cityList = cityService.findAll();
     model.addAttribute("cityList", cityList);
-	
     Map<department, Integer> departmentList=todoContant.listOfDepartMent();
     model.addAttribute("departmentList", departmentList);
    	return new ModelAndView("registor");
@@ -86,32 +86,11 @@ public class GenericController {
 	 */
 	@RequestMapping("/employeelist")
   	public ModelAndView list(Model model) {
-  	model.addAttribute("employeelist",new RegisterRequest());
-  	 List<RegisterRequest> listEmp = userDataService.listOfAllUsers();
- 	model.addAttribute("listEmp", listEmp);
+  	List<RegisterRequest> listEmp = userDataService.listOfAllEmployee();
+  	//List<RegisterRequest> listEmp = userDataService.listOfAllUsers();
+    model.addAttribute("listEmp", listEmp);
+    System.out.println(listEmp.toString());
   	return new ModelAndView("employeelist");
    	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   	
-   }
+  }
 }

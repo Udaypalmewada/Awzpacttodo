@@ -12,7 +12,7 @@
 <style type="text/css">
 body {
   margin: var(--top-spacing) auto;
-  max-width: 400px;
+  max-width: auto;
   padding: 100px 20px;
   font: 18px/1.4 system-ui;
 }
@@ -29,6 +29,8 @@ body {
                <th>Phone</th>
                 <th>Email</th>
                 <th>Gender</th>
+                <th>City</th>
+                <th>Address</th>
                  <th>Status</th>
             </tr>
             <c:forEach var="emolyee" items="${listEmp}">
@@ -37,6 +39,8 @@ body {
                     <td><c:out value="${emolyee.number}" /></td>
                     <td><c:out value="${emolyee.email}" /></td>
                     <td><c:out value="${emolyee.gender}" /></td>
+                     <td><c:out value="${emolyee.city.name}" /></td>
+                    <td><c:out  value="${emolyee.address.address}" /></td>
                        <td><c:out value="${emolyee.status}" /></td>
                     <td>
                         <a href="/edit?id=<c:out value='${emolyee.status}' />">Edit</a>

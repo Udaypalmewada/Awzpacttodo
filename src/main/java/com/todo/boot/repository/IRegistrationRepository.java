@@ -15,6 +15,7 @@ public interface IRegistrationRepository extends JpaRepository<RegistrationModel
 	//long countByNameLikeAndPasswordLike(String name, String password);
 
 	Optional<RegistrationModel> findByNameLike(String name);
+		
 
 
 }
