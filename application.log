@@ -1,0 +1,104 @@
+2020-08-10 12:34:05.424  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : Starting TodoApplication on DESKTOP-TB8Q05O with PID 7640 (G:\prectice\ADJAVA\5\22\20\todo\target\classes started by UDAY JAVA in G:\prectice\ADJAVA\5\22\20\todo)
+2020-08-10 12:34:05.429  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : The following profiles are active: true
+2020-08-10 12:34:05.577  INFO 7640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-10 12:34:05.577  INFO 7640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-10 12:34:07.920  INFO 7640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 12:34:08.394  INFO 7640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 407ms. Found 4 JPA repository interfaces.
+2020-08-10 12:34:10.032  INFO 7640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-10 12:34:10.045  INFO 7640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-10 12:34:10.045  INFO 7640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-10 12:34:10.548  INFO 7640 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-08-10 12:34:10.554  INFO 7640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-10 12:34:10.555  INFO 7640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4977 ms
+2020-08-10 12:34:10.927  INFO 7640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:34:10.998  INFO 7640 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 12:34:11.216  INFO 7640 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-10 12:34:11.289  WARN 7640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 12:34:11.750  INFO 7640 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-10 12:34:11.975  INFO 7640 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-10 12:34:12.299  INFO 7640 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-10 12:34:12.342  INFO 7640 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-10 12:34:12.575  INFO 7640 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@788c106c, org.springframework.security.web.context.SecurityContextPersistenceFilter@868f02b, org.springframework.security.web.header.HeaderWriterFilter@1705f74f, org.springframework.security.web.csrf.CsrfFilter@4c6b70f4, org.springframework.security.web.authentication.logout.LogoutFilter@7470e4d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77e01c56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@26d7acc5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d1a11a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4962a8a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77ad0c08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2add0844, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@795e09de, org.springframework.security.web.session.SessionManagementFilter@7f9b8592, org.springframework.security.web.access.ExceptionTranslationFilter@f6f6944, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20c88ca4]
+2020-08-10 12:34:12.658  INFO 7640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-10 12:34:12.783  INFO 7640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-10 12:34:12.787  INFO 7640 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-10 12:34:14.087  INFO 7640 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 12:34:14.099  INFO 7640 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:34:14.700  INFO 7640 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-10 12:34:14.722  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : Started TodoApplication in 10.193 seconds (JVM running for 11.92)
+2020-08-10 12:34:14.759  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            :   Application Up time2020-08-10
+2020-08-10 12:34:22.763  INFO 7640 --- [http-nio-8085-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-10 12:34:26.123 ERROR 7640 --- [http-nio-8085-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:369) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:336) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_151]
+
+2020-08-10 12:37:24.349  INFO 7640 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:37:24.353  INFO 7640 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:37:24.361  INFO 7640 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-10 12:37:24.379  INFO 7640 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-10 12:37:24.851  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : Starting TodoApplication on DESKTOP-TB8Q05O with PID 7640 (G:\prectice\ADJAVA\5\22\20\todo\target\classes started by UDAY JAVA in G:\prectice\ADJAVA\5\22\20\todo)
+2020-08-10 12:37:24.852  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : The following profiles are active: true
+2020-08-10 12:37:25.354  INFO 7640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-10 12:37:25.391  INFO 7640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 4 JPA repository interfaces.
+2020-08-10 12:37:25.702  INFO 7640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-10 12:37:25.703  INFO 7640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-10 12:37:25.703  INFO 7640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-10 12:37:25.873  INFO 7640 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-08-10 12:37:25.876  INFO 7640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-10 12:37:25.876  INFO 7640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2020-08-10 12:37:25.980  INFO 7640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:37:25.999  INFO 7640 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-10 12:37:26.009  INFO 7640 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-08-10 12:37:26.015  INFO 7640 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-08-10 12:37:26.016  INFO 7640 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-08-10 12:37:26.142  WARN 7640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-10 12:37:26.471  INFO 7640 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@683d0206, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b861867, org.springframework.security.web.header.HeaderWriterFilter@5062d00, org.springframework.security.web.csrf.CsrfFilter@227dcad1, org.springframework.security.web.authentication.logout.LogoutFilter@2dc791c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d282534, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b02f2fd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9a66678, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fb556c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53bddb76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6767922c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@250be3fd, org.springframework.security.web.session.SessionManagementFilter@27e17508, org.springframework.security.web.access.ExceptionTranslationFilter@4d6eadac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fe5c3ea]
+2020-08-10 12:37:26.509  INFO 7640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-10 12:37:26.551  INFO 7640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-10 12:37:26.552  INFO 7640 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-10 12:37:26.668  INFO 7640 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-10 12:37:26.669  INFO 7640 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:37:27.085  INFO 7640 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-10 12:37:27.097  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            : Started TodoApplication in 2.341 seconds (JVM running for 204.296)
+2020-08-10 12:37:27.101  INFO 7640 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-10 12:37:27.102  INFO 7640 --- [restartedMain] com.todo.boot.TodoApplication            :   Application Up time2020-08-10
+2020-08-10 12:38:19.730  INFO 7640 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-10 12:38:19.732  INFO 7640 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-10 12:38:19.733  INFO 7640 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-08-10 12:38:19.740  INFO 7640 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

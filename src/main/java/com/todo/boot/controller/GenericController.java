@@ -27,6 +27,7 @@ import com.todo.boot.util.TodoConstant.department;
  */
 @Controller
 public class GenericController {
+	
 	private TodoConstant todoContant=null;
 	@Autowired
 	private ICityService cityService;
@@ -38,7 +39,7 @@ public class GenericController {
 	 * @return home page.
 	 * for redirection to home page.
 	 */
-	@RequestMapping("/")
+	@RequestMapping(" ")
 	public ModelAndView homePage() {
 		ModelAndView vname = new ModelAndView();
 		vname.setViewName("home");
@@ -50,7 +51,7 @@ public class GenericController {
 	 * @param model id ans password.
 	 * @return login user.
 	 */
-	@RequestMapping("/userlogin")
+	@RequestMapping("userlogin")
   	public ModelAndView login(Model model) {
   	model.addAttribute("login",new UserLoginModel());
   	return new ModelAndView("userlogin");
@@ -68,7 +69,7 @@ public class GenericController {
      * @param model
      * @return register user model.
      */
-    @RequestMapping("/registor")
+    @RequestMapping("registor")
    	public ModelAndView registor(Model model) {
     model.addAttribute("register", new RegisterRequest());
     List<CityRequest> cityList = cityService.findAll();
@@ -84,7 +85,7 @@ public class GenericController {
 	 * @param model
 	 * @return list of emplyee.
 	 */
-	@RequestMapping("/employeelist")
+	@RequestMapping("employeelist")
   	public ModelAndView list(Model model) {
   	List<RegisterRequest> listEmp = userDataService.listOfAllEmployee();
   	//List<RegisterRequest> listEmp = userDataService.listOfAllUsers();
