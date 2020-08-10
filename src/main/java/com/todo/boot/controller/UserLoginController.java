@@ -4,6 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,11 +17,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.todo.boot.TodoApplication;
 import com.todo.boot.entity.UserLoginModel;
 import com.todo.boot.service.IUserloginService;
 
 @Controller
 public class UserLoginController {
+	private static final Logger LOGGER=LoggerFactory.getLogger(TodoApplication.class);
 	@Autowired 
 	private IUserloginService loginservice;
 	
@@ -30,7 +34,7 @@ public class UserLoginController {
 	 * @param sesion
 	 * @return dashbaord.
 	 */
-	@RequestMapping(path = "/loginChek", method = RequestMethod.POST)
+	@RequestMapping(path = "loginChek", method = RequestMethod.POST)
 	public ModelAndView chekLogin(@ModelAttribute("login") UserLoginModel login, Model model, HttpSession sesion) {
 		boolean flag = loginservice.checkUserExistance(login);
 			if (flag) {
@@ -38,12 +42,13 @@ public class UserLoginController {
 				model.addAttribute("msg", "Welcome to Awzpact");
 				return new ModelAndView("dashboard");
 			} else {
+				LOGGER.error("login failed{}", System.currentTimeMillis());
 				model.addAttribute("msg", "Invalid UserName and Password");
 				return new ModelAndView("login");
 			}
 		}
 	
-	@RequestMapping(value="/logout", method = RequestMethod.GET)
+	@RequestMapping(value="logout", method = RequestMethod.GET)
 	public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
 	    Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 	    if (auth != null){    

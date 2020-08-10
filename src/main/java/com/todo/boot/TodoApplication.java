@@ -17,7 +17,7 @@ public class TodoApplication {
 	private static final Logger LOGGER=LoggerFactory.getLogger(TodoApplication.class);
 	public static void main(String[] args) {
 		SpringApplication.run(TodoApplication.class, args);
-		//LOGGER.info("Simple log  Application Up time{}", System.currentTimeMillis());
+		LOGGER.info("  Application Up time{}", java.time.LocalDate.now());
 	}
 
 }
