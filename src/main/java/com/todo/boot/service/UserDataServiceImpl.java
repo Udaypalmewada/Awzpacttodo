@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Repository;
 
+import com.todo.boot.TodoApplication;
 import com.todo.boot.entity.Address;
 import com.todo.boot.entity.City;
 import com.todo.boot.entity.RegistrationModel;
@@ -36,6 +39,7 @@ public class UserDataServiceImpl implements IUserDataService {
 	
 	@Autowired
 	private IAddressRepository addressReposity;
+	private static final Logger LOGGER=LoggerFactory.getLogger(TodoApplication.class);
 
 	public int saveUser(RegisterRequest register) {
 		RegistrationModel registerModel = new RegistrationModel();
@@ -59,6 +63,7 @@ public class UserDataServiceImpl implements IUserDataService {
 				return 1;
 			}
 		}
+		LOGGER.error(" unable to register new employee{}", java.time.LocalDate.now());
     return 0;
 	}
 
